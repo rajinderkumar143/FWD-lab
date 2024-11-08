@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-logo">
+                <img src="https://logospng.org/download/spotify/logo-spotify-icon-4096.png" alt="Spotify Logo">
+            </div>
+
+            <ul class="sidebar-links">
+                <li>Home</li>
+                <li>Search</li>
+                <li>Your Library</li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="header">
+                <h2>Welcome to Spotify</h2>
+            </div>
+            <div class="song-list">
+                <!-- Song 1 -->
+                <div class="song" data-song="audio/song1.mp3">
+                    <img src="https://i.pinimg.com/originals/09/19/98/09199823513b72c230206729d4573392.jpg" alt="Song 1" class="song-img">
+                    <p class="song-title">Hint - Karan Aujla</p>
+                </div>
+                <!-- Song 2 -->
+                <div class="song" data-song="audio/song2.mp3">
+                    <img src="https://www.lyricsstatus.com/wp-content/uploads/2020/08/Webp.net-compress-image-83-1024x1024.jpg" alt="Song 2" class="song-img">
+                    <p class="song-title">Jatt Jaffee - Gurlez Akhtar</p>
+                </div>
+                <!-- Song 3 -->
+                <div class="song" data-song="audio/song3.mp3">
+                    <img src="https://th.bing.com/th/id/OIP.pYXcyxoSZPrFG5P1LqRn6wHaEK?rs=1&pid=ImgDetMain" alt="Song 3" class="song-img">
+                    <p class="song-title">Mehandi - Miss Pooja</p>
+                </div>
+                <!-- Song 4 -->
+                <div class="song" data-song="audio/song4.mp3">
+                    <img src="https://th.bing.com/th/id/OIP.S2BK3GLpJvSKXv1Kwwv8VwHaEK?rs=1&pid=ImgDetMain" alt="Song 4" class="song-img">
+                    <p class="song-title">Blue Eyes - Yo Yo Honey Singh</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Music Player -->
+    <div class="music-player">
+        <audio id="audio-player" controls>
+            <source id="audio-source" src="" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="player-controls">
+            <button id="prev-btn" class="control-btn">&#9664;</button>
+            <button id="play-btn" class="control-btn">&#9654;</button>
+            <button id="next-btn" class="control-btn">&#9654;&#9654;</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
